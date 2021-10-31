@@ -24,18 +24,6 @@ header > div {
     color: #7d7d7d;
 }
 
-a {
-    position: relative;
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    z-index: 9999;
-}
-
-.galleryContainer {
-    /* margin: 0 2rem 0 2rem; */
-}
-
 .gallery {
     display: grid;
     grid-template-columns: repeat(1, auto);
@@ -50,6 +38,14 @@ a {
     gap: 2em;
 }
 
+a {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+}
+
 .galleryItem {
     display: inline-block;
     height: 100%;
@@ -61,6 +57,7 @@ a {
     vertical-align: middle;
     object-fit: cover;
     object-position: center;
+    z-index: -1;
 }
 
 .galleryItemImg:hover {
@@ -87,4 +84,70 @@ a {
 .itemAuthor {
     font-size: 0.7rem;
     color: #e5e5e5;
+}
+
+.pageWrapper {
+    padding: 2rem 2rem 0 2rem;
+}
+
+.painting {
+    width: 100%;
+}
+
+.paintingInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.paintingDetails {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 80%;
+    z-index: 1000;
+    height: 5rem;
+    bottom: 5rem;
+    background-color: white;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.paintingName {
+    font-size: 2rem;
+}
+
+.paintingAuthor {
+    font-size: 0.8rem;
+    color: #7d7d7d;
+}
+
+.authorPicContainer {
+    position: relative;
+    padding-left: 1.5rem;
+    bottom: 3rem;
+}
+
+.authorPic {
+    width: 64px;
+    height: 64px;
+}
+
+.descWrapper {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.year {
+    position: absolute;
+    font-size: 7rem;
+    top: -4rem;
+    color: #f3f3f3;
+    z-index: -1;
+}
+
+.paintingDesc {
+    line-height: 1.7rem;
+    font-size: 0.8rem;
+    color: #7d7d7d;
 }
