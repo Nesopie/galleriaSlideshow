@@ -17,7 +17,7 @@ import theSwing from "../assets/the-swing/thumbnail.jpg";
 const GalleryItem = (props) => {
     return (
         <div className="galleryItem">
-            <a className="imageAnchor"href={`${props.redirectUrl}`}>
+            <a className="imageAnchor" href={`#/${props.redirectUrl}`}>
                 <img className="galleryItemImg" src={props.imgUrl} alt={props.title}/>
                 <div className="itemDetails">
                     <div className="itemTitle">{props.title}</div>
