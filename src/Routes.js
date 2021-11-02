@@ -18,7 +18,7 @@ import TheSwing from './Gallery/the-swing.js'
 
 const Routes = () => {
     return(
-        <BrowserRouter>
+        <BrowserRouter basename={process.enc.PUBLIC_URL}>
             <Switch>
                 <Route exact path="/" component={App}/>
                 <Route exact path="/starry-night" component={StarryNight}/>
