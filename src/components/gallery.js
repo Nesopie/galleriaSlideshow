@@ -17,7 +17,7 @@ import theSwing from "../assets/the-swing/thumbnail.jpg";
 const GalleryItem = (props) => {
     return (
         <div className="galleryItem">
-            <a href={`${props.redirectUrl}`}>
+            <a className="imageAnchor"href={`${props.redirectUrl}`}>
                 <img className="galleryItemImg" src={props.imgUrl} alt={props.title}/>
                 <div className="itemDetails">
                     <div className="itemTitle">{props.title}</div>
@@ -33,26 +33,26 @@ const Gallery = (props) => {
         <div className="gallery">
             <div className="galleryColumn">
                 <GalleryItem imgUrl={starryNight} title="Starry Night" author="Vincent Van Gogh" redirectUrl="starry-night"/>
-                <GalleryItem imgUrl={theStormOnTheSeaOfGalielee} title="The Storm on the Sea of Galiliee" author="Rembrandt"/>
-                <GalleryItem imgUrl={ladyWithAnErmine} title="Lady with an Ermine" author="Leonardo da Vinci"/>
-                <GalleryItem imgUrl={theBoyInTheRedVest} title="The Boy in the Red Vest" author="Edward Hopper"/>
+                <GalleryItem imgUrl={theStormOnTheSeaOfGalielee} title="The Storm on the Sea of Galiliee" author="Rembrandt" redirectUrl="the-storm-on-the-sea-of-galilee"/>
+                <GalleryItem imgUrl={ladyWithAnErmine} title="Lady with an Ermine" author="Leonardo da Vinci" redirectUrl="the-lady-with-an-ermine"/>
+                <GalleryItem imgUrl={theBoyInTheRedVest} title="The Boy in the Red Vest" author="Edward Hopper" redirectUrl="the-boy-in-the-red-vest"/>
             </div>
             <div className="galleryColumn">
-                <GalleryItem imgUrl={girlWithPearlEarring} title="Girl with a Pearl Earring" author="Johannes Vermeer"/>
-                <GalleryItem imgUrl={theGreatWaveOffKanegawa} title="The Great Wave off Kanagawa" author="Hokusai"/>
-                <GalleryItem imgUrl={theNightCafe} title="The Night café" author="Vincent van Gogh"/>
-                <GalleryItem imgUrl={arnolfiniPortrait} title="Arnolfini Portrait" author="Jan van Eyck"/>
+                <GalleryItem imgUrl={girlWithPearlEarring} title="Girl with a Pearl Earring" author="Johannes Vermeer" redirectUrl="girl-with-a-pearl-earring"/>
+                <GalleryItem imgUrl={theGreatWaveOffKanegawa} title="The Great Wave off Kanagawa" author="Hokusai" redirectUrl="the-great-wave-off-kanagawa"/>
+                <GalleryItem imgUrl={theNightCafe} title="The Night café" author="Vincent van Gogh" redirectUrl="the-night-cafe"/>
+                <GalleryItem imgUrl={arnolfiniPortrait} title="Arnolfini Portrait" author="Jan van Eyck" redirectUrl="arnolfini-portrait"/>
             </div>
             <div className="galleryColumn">
-                <GalleryItem imgUrl={guernica} title="Guernica" author="Pablo Picasso"/>
-                <GalleryItem imgUrl={vanGoghSelfPortrait} title="Van Gogh self-portrait" author="Vincent Van Gogh"/>
-                <GalleryItem imgUrl={monaLisa} title="Mona Lisa" author="Leonardo da Vinci"/>
+                <GalleryItem imgUrl={guernica} title="Guernica" author="Pablo Picasso" redirectUrl="guernica"/>
+                <GalleryItem imgUrl={vanGoghSelfPortrait} title="Van Gogh self-portrait" author="Vincent Van Gogh" redirectUrl="van-gogh-self-portrait"/>
+                <GalleryItem imgUrl={monaLisa} title="Mona Lisa" author="Leonardo da Vinci" redirectUrl="mona-lisa"/>
             </div>
-            <div className="galleryColumn">
-                <GalleryItem imgUrl={penitentMagdalene} title="Penitent Magdalene" author="Artemisia Gentileschi"/>
-                <GalleryItem imgUrl={theSleepingGypsy} title="The Sleeping Gypsy" author="Henri Rousseau"/>
-                <GalleryItem imgUrl={theBasketOfApples} title="The Basket of Apples" author="Paul Cézanne"/>
-                <GalleryItem imgUrl={theSwing} title="The Swing" author="Jean-Honoré Fragonard"/>
+            <div className="galleryColumn last">
+                <GalleryItem imgUrl={penitentMagdalene} title="Penitent Magdalene" author="Artemisia Gentileschi" redirectUrl="penitent-magdalene"/>
+                <GalleryItem imgUrl={theSleepingGypsy} title="The Sleeping Gypsy" author="Henri Rousseau" redirectUrl="the-sleeping-gypsy"/>
+                <GalleryItem imgUrl={theBasketOfApples} title="The Basket of Apples" author="Paul Cézanne" redirectUrl="the-basket-of-apples"/>
+                <GalleryItem imgUrl={theSwing} title="The Swing" author="Jean-Honoré Fragonard" redirectUrl="the-swing"/>
             </div>
         </div>
     )

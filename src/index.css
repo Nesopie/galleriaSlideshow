@@ -11,8 +11,7 @@ header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem 0 1rem 0;
-    padding: 0 2rem 0 2rem;
+    padding: 1rem 2rem 1rem 2rem;
 }
 
 .title {
@@ -38,7 +37,7 @@ header > div {
     gap: 2em;
 }
 
-a {
+.imageAnchor {
     position: relative;
     display: inline-block;
     height: 100%;
@@ -90,6 +89,52 @@ a {
     padding: 2rem 2rem 0 2rem;
 }
 
+.leftContainer {
+    position: relative;
+}
+
+.viewImage {
+    position: absolute;
+    background-color: black;
+    z-index: 9990;
+    color: white;
+    top: 0;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: 0;
+    opacity: 0.7;
+    font-size: 0.5rem;
+}
+
+.viewImage::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("./assets/shared/icon-view-image.svg") no-repeat;
+    left: 0;
+    right: -5rem;
+    margin-left: 0.6rem;
+}
+
+.viewImage:hover {
+    cursor: pointer;
+    background-color: #9d9d9d;
+    opacity: 0.8;
+}
+
+.viewImage > button {
+    position: relative;
+    background-color: black;
+    color: white;
+    font-size: 0.65rem;
+    border: 0;
+    opacity: 0.7;
+    margin-left: 1.2rem;
+    z-index: -100;
+}
+
 .painting {
     width: 100%;
 }
@@ -113,11 +158,13 @@ a {
 }
 
 .paintingName {
-    font-size: 2rem;
+    font-size: 1.5em;
+    font-family: "Libre Baskerville";
+    font-weight: 700;
 }
 
 .paintingAuthor {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     color: #7d7d7d;
 }
 
@@ -150,4 +197,211 @@ a {
     line-height: 1.7rem;
     font-size: 0.8rem;
     color: #7d7d7d;
+}
+
+footer {
+    position: relative;
+    bottom: 100%;
+    display: flex;
+    padding: 1rem 2rem 1rem 2rem;
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid black;
+}
+
+.authorDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footerPaintingName {
+    font-size: 1rem;
+}
+
+.footerAuthor {
+    font-size: 0.8rem;
+    color: #9d9d9d;
+}
+
+.btns {
+    display: flex;
+    gap: 1rem;
+}
+
+.btns > button{
+    background-color: white;
+    border: 0;
+}
+
+.galleryImg {
+    position: fixed;
+    display: flex;
+    z-index: 9991;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+}
+
+center {
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    text-align: right;
+    z-index: 9999;
+    color: white;
+    font-size: 0.8rem;
+    padding: 0 3rem 0 3rem;
+}
+
+center > img {
+    max-width: 100%;
+    width: 100%;
+}
+
+#close:hover {
+    cursor: pointer;
+}
+
+.noDisplay {
+    display: none;
+}
+
+.galleryImg > div {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .title {
+        font-size: 3em;
+        font-weight: 700;
+    }
+
+    .leftContainer {
+        display: flex;
+    }
+
+    .paintingInfo {
+        display: flex;
+    }
+
+    .paintingDetails {
+        z-index: 9990;
+        border: 0;
+        display: flex;
+        position: absolute;
+        width: unset;
+        width: 25rem;
+        right: 0;
+        padding: 0;
+        bottom: unset;
+        background-color: white;
+        height: 15rem;
+        padding-left: 3rem;
+    }
+
+    .paintingName {
+        font-size: 3rem;
+    }
+
+    .paintingAuthor {
+        position: absolute;
+        font-size: 1rem;
+        padding-top: 2rem;
+    }
+
+    .authorPicContainer {
+        height: 100%;
+    }
+
+    .authorPic {
+        position: relative;
+        top: 18rem;
+        width: 128px;
+        height: 128px;
+    }
+
+    .rightContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .descWrapper {
+        margin-top: 5rem;
+    }
+
+    .year {
+        top: unset;
+        left: 0;
+        font-size: 10rem;
+    }
+
+    .paintingDesc {
+        font-size: 0.9rem;
+        padding: 0 7rem 0 7rem;
+    }
+
+    .goToSource {
+        padding: 0 7rem 0 7rem;
+        text-decoration: none;
+        color:#9d9d9d;
+    }
+
+    .viewImage {
+        transform: scale(1.5);
+        margin-top: 1rem;
+        margin-left: 2.3rem;
+
+    }
+}
+
+@media screen and (min-width: 1110px) {
+    .gallery {
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 1.5rem;
+    }
+
+    .pageWrapper {
+        display: grid;
+        grid-template-columns: 5.5fr 4.5fr;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .painting {
+        height: 35rem;
+    }
+
+    .authorPicContainer {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .authorPic {
+        position: relative;
+        top: unset;
+        bottom: 0;
+    }
+
+    .year {
+        left: unset;
+        right: 0;
+        font-size: 15rem;
+    }
+
+    .descWrapper {
+        margin-top: 1rem;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
 }
