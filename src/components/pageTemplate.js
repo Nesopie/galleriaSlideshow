@@ -58,7 +58,7 @@ const RightContainer = (props) => {
                     {props.desc}
                 </div>
             </div>
-            <a className="goToSource" href="/">GO TO SOURCE</a>
+            <a className="goToSource" href={props.source}>GO TO SOURCE</a>
         </section>
     );
 }
@@ -88,9 +88,9 @@ const PageTemplate = (props) => {
             <hr/>
             <div className="pageWrapper">
                 <LeftContainer paintingUrl={props.paintingUrl} title={props.title} author={props.author} authorImg={props.authorImg}/>
-                <RightContainer desc={props.desc} year={props.year}/>
+                <RightContainer desc={props.desc} year={props.year} source={props.source}/>
             </div>
-            <Footer paintingName={props.title} author={props.author}/>
+            <Footer paintingName={props.title} author={props.author} nextUrl={props.nextUrl} prevUrl={props.prevUrl}/>
         </div>
     );
 }

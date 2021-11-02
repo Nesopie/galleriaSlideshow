@@ -21,6 +21,7 @@ header > div {
 .startSlideshow {
     font-size: 0.7rem;
     color: #7d7d7d;
+    text-decoration: none;
 }
 
 .gallery {
@@ -227,11 +228,17 @@ footer {
 .btns {
     display: flex;
     gap: 1rem;
+    align-items: center;
 }
 
-.btns > button{
-    background-color: white;
-    border: 0;
+.btns > a:hover {
+    opacity: 0.5;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.2;
 }
 
 .galleryImg {

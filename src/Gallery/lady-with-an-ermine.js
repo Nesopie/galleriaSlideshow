@@ -2,6 +2,7 @@ import PageTemplate from '../components/pageTemplate.js';
 import smallLadyErmine from '../assets/lady-with-an-ermine/hero-small.jpg';
 import largeLadyErmine from '../assets/lady-with-an-ermine/hero-large.jpg';
 import ladyErmineAuthor from '../assets/lady-with-an-ermine/artist.jpg';
+import galleryImg from '../assets/lady-with-an-ermine/gallery.jpg'
 
 const TheLadyWithAnErmine = () => {
     return (
@@ -12,7 +13,7 @@ const TheLadyWithAnErmine = () => {
         mistress of Ludovico Sforza ("Il Moro"), Duke of Milan; Leonardo was painter to
         the Sforza court at the time of its execution. It is one of only four surviving
         portraits of women painted by Leonardo, the others being Ginevra de' Benci, La
-        Belle Ferronnière and the Mona Lisa.`} authorImg={ladyErmineAuthor} year="1489"/>
+        Belle Ferronnière and the Mona Lisa.`} authorImg={ladyErmineAuthor} year="1489" galleryImg={galleryImg} prevUrl="the-sleeping-gypsy" nextUrl="the-night-cafe" source="https://en.wikipedia.org/wiki/Lady_with_an_Ermine"/>
     );
 }
 

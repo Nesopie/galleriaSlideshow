@@ -2,6 +2,7 @@ import PageTemplate from '../components/pageTemplate.js';
 import smallMona from '../assets/mona-lisa/hero-small.jpg';
 import largeMona from '../assets/mona-lisa/hero-large.jpg';
 import monaAuthor from '../assets/mona-lisa/artist.jpg';
+import galleryImg from '../assets/mona-lisa/gallery.jpg'
 
 const MonaLisa = () => {
     return (
@@ -12,8 +13,8 @@ const MonaLisa = () => {
         most written about, the most sung about, the most parodied work of art in the
         world". The painting's novel qualities include the subject's enigmatic
         expression, the monumentality of the composition, the subtle modelling of
-        forms, and the atmospheric illusionism.`} authorImg={monaAuthor} year="1503"/>
-    )
+        forms, and the atmospheric illusionism.`} authorImg={monaAuthor} year="1503" galleryImg={galleryImg} prevUrl="the-night-cafe" nextUrl="the-basket-of-apples" source="https://en.wikipedia.org/wiki/Mona_Lisa"/>
+    );
 }
 
 export default MonaLisa;

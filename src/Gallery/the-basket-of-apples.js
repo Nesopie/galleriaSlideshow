@@ -2,6 +2,7 @@ import PageTemplate from '../components/pageTemplate.js';
 import smallBasket from '../assets/the-basket-of-apples/hero-small.jpg';
 import largeBasket from '../assets/the-basket-of-apples/hero-large.jpg';
 import basketAuthor from '../assets/the-basket-of-apples/artist.jpg';
+import galleryImg from '../assets/the-basket-of-apples/gallery.jpg'
 
 const TheBasketOfApples = () => {
     return(
@@ -11,7 +12,7 @@ const TheBasketOfApples = () => {
         representation in favour of distorting objects to create multiple perspectives.
         This approach eventually influenced other art movements, including Fauvism and
         Cubism. It belongs to the Helen Birch Bartlett Memorial Collection of the Art
-        Institute of Chicago.`} authorImg={basketAuthor} year="1893"/>
+        Institute of Chicago.`} authorImg={basketAuthor} year="1893" galleryImg={galleryImg} prevUrl="mona-lisa" nextUrl="the-boy-in-the-red-vest" source="https://en.wikipedia.org/wiki/The_Basket_of_Apples"/>
     );
 }
 

@@ -2,6 +2,7 @@ import PageTemplate from '../components/pageTemplate.js';
 import smallGuernica from '../assets/guernica/hero-small.jpg';
 import largeGuernica from '../assets/guernica/hero-large.jpg';
 import guernicaAuthor from '../assets/guernica/artist.jpg';
+import galleryImg from '../assets/guernica/gallery.jpg'
 
 const Guernica = () => {
     return (
@@ -11,7 +12,7 @@ const Guernica = () => {
         run through by a spear or javelin. The horse appears to be wearing chain mail
         armor, decorated with vertical tally marks arranged in rows. A dead and dismembered
         soldier lies under the horse. The hand of his severed right arm grasps a shattered
-        sword, from which a flower grows.`} authorImg={guernicaAuthor} year="1937"/>
+        sword, from which a flower grows.`} authorImg={guernicaAuthor} year="1937" galleryImg={galleryImg} prevUrl="girl-with-a-pearl-earring" nextUrl="penitent-magdalene" source="https://en.wikipedia.org/wiki/Guernica_(Picasso)"/>
     );
 }
 

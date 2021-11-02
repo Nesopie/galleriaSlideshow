@@ -2,6 +2,7 @@ import PageTemplate from '../components/pageTemplate.js';
 import smallSwing from '../assets/the-swing/hero-small.jpg';
 import largeSwing from '../assets/the-swing/hero-large.jpg';
 import swingAuthor from '../assets/the-swing/artist.jpg';
+import galleryImg from '../assets/the-swing/gallery.jpg'
 
 const TheSwing = () => {
     return(
@@ -11,7 +12,7 @@ const TheSwing = () => {
         hand. A smiling older man, who is nearly hidden in the shadows on the right,
         propels the swing with a pair of ropes. The older man appears to be unaware of
         the young man. As the young lady swings high, she throws her left leg up,
-        allowing her dainty shoe to fly through the air.`} authorImg={swingAuthor} year="1767"/>
+        allowing her dainty shoe to fly through the air.`} authorImg={swingAuthor} year="1767" galleryImg={galleryImg} prevUrl="arnolfini-portrait" nextUrl="starry-night" source="https://en.wikipedia.org/wiki/The_Swing_(Fragonard)"/>
     );
 }
 
