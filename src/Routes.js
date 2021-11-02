@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter,BrowserRouter, Switch, Route } from 'react-router-dom';
 import App from './App';
 import StarryNight from './Gallery/starry-night.js';
 import GirlWithPearlEarring from './Gallery/girl-with-a-pearl-earring.js';
@@ -18,7 +18,7 @@ import TheSwing from './Gallery/the-swing.js'
 
 const Routes = () => {
     return(
-        <BrowserRouter basename={process.enc.PUBLIC_URL}>
+        <HashRouter basename={process.env.PUBLIC_URL}>
             <Switch>
                 <Route exact path="/" component={App}/>
                 <Route exact path="/starry-night" component={StarryNight}/>
@@ -37,7 +37,7 @@ const Routes = () => {
                 <Route exact path="/arnolfini-portrait" component={ArnolfiniPortrait}/>
                 <Route exact path="/the-swing" component={TheSwing}/>
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
