@@ -13,7 +13,7 @@ const StarryNight = () => {
         view which Van Gogh painted variations of no fewer than twenty-one times, including
         The Starry Night. "Through the iron-barred window," he wrote to his brother, Theo,
         around 23 May 1889, "I can see an enclosed square of wheat ... above which, in the
-        morning, I watch the sun rise in all its glory."`} authorImg={starryNightAuthor} year="1889" galleryImg={galleryImg} prevUrl="the-swing" nextUrl="girl-with-a-pearl-earring" source="https://en.wikipedia.org/wiki/The_Starry_Night"/>
+        morning, I watch the sun rise in all its glory."`} authorImg={starryNightAuthor} year="1889" galleryImg={galleryImg} prevUrl="the-swing" nextUrl="girl-with-a-pearl-earring" source="https://en.wikipedia.org/wiki/The_Starry_Night" currentItem={1}/>
     );
 }
 

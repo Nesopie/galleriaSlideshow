@@ -12,7 +12,7 @@ const TheGreatWaveOffKanagawa = () => {
         published sometime between 1829 and 1833 in the late Edo period as the first
         print in Hokusai's series Thirty-six Views of Mount Fuji. The image depicts an
         enormous wave threatening three boats off the coast in the Sagami Bay (Kanagawa
-        Prefecture) while Mount Fuji rises in the background.`} authorImg={smallWaveAuthor} year="1831" galleryImg={galleryImg} prevUrl="the-storm-on-the-sea-of-galilee" nextUrl="van-gogh-self-portrait" source="https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa"/>
+        Prefecture) while Mount Fuji rises in the background.`} authorImg={smallWaveAuthor} year="1831" galleryImg={galleryImg} prevUrl="the-storm-on-the-sea-of-galilee" nextUrl="van-gogh-self-portrait" source="https://en.wikipedia.org/wiki/The_Great_Wave_off_Kanagawa" currentItem={6}/>
     );
 }
 

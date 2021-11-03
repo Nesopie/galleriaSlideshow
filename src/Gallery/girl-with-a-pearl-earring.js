@@ -11,7 +11,7 @@ const GirlWithPearlEarring = () => {
             not meant to be a portrait. It depicts a European girl wearing an exotic dress,
             an oriental turban, and what was thought to be a very large pearl as an earring.
             In 2014, Dutch astrophysicist Vincent Icke raised doubts about the material of the
-            earring and argued that it looks more like polished tin than pearl on the grounds`} authorImg={girlEarringAuthor} year="1665" galleryImg={galleryImg} prevUrl="starry-night" nextUrl="guernica" source="https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring"/>
+            earring and argued that it looks more like polished tin than pearl on the grounds`} authorImg={girlEarringAuthor} year="1665" galleryImg={galleryImg} prevUrl="starry-night" nextUrl="guernica" source="https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring" currentItem={2}/>
     );
 }
 

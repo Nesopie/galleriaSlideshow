@@ -12,7 +12,7 @@ const TheBoyInTheRedVest = () => {
         to by this title, is the one which depicts the boy in a melancholic seated
         pose with his elbow on a table and his head cradled in his hand. It is currently
         held in Zürich, Switzerland. The other three portraits, of different poses, are
-        in museums in the US`} authorImg={boyAuthor} year="1889" galleryImg={galleryImg} prevUrl="the-basket-of-apples" nextUrl="arnolfini-portrait" source="https://en.wikipedia.org/wiki/The_Boy_in_the_Red_Vest"/>
+        in museums in the US`} authorImg={boyAuthor} year="1889" galleryImg={galleryImg} prevUrl="the-basket-of-apples" nextUrl="arnolfini-portrait" source="https://en.wikipedia.org/wiki/The_Boy_in_the_Red_Vest" currentItem={13}/>
     );
 }
 

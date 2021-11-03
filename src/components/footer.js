@@ -7,6 +7,7 @@ const Footer = (props) => {
 
     return(
         <footer>
+            <div className="progressBar" style={{width: `${props.currentItem / 15 * 100}%`}}></div>
             <div className="authorDetails">
                 <div className="footerPaintingName">{props.paintingName}</div>
                 <div className="footerAuthor">{props.author}</div>

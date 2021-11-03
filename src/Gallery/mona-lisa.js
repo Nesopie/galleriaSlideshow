@@ -13,7 +13,7 @@ const MonaLisa = () => {
         most written about, the most sung about, the most parodied work of art in the
         world". The painting's novel qualities include the subject's enigmatic
         expression, the monumentality of the composition, the subtle modelling of
-        forms, and the atmospheric illusionism.`} authorImg={monaAuthor} year="1503" galleryImg={galleryImg} prevUrl="the-night-cafe" nextUrl="the-basket-of-apples" source="https://en.wikipedia.org/wiki/Mona_Lisa"/>
+        forms, and the atmospheric illusionism.`} authorImg={monaAuthor} year="1503" galleryImg={galleryImg} prevUrl="the-night-cafe" nextUrl="the-basket-of-apples" source="https://en.wikipedia.org/wiki/Mona_Lisa" currentItem={11}/>
     );
 }
 

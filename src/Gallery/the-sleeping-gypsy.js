@@ -12,7 +12,7 @@ const TheSleepingGypsy = () => {
         exhibited the painting at the 13th Salon des Indépendants, and tried unsuccessfully
         to sell it to the mayor of his hometown, Laval. Instead, it entered the private
         collection of a Parisian charcoal merchant where it remained until 1924, when it
-        was discovered by the art critic Louis Vauxcelles."`} authorImg={GypsyAuthor} year="1897" galleryImg={galleryImg} prevUrl="van-gogh-self-portrait" nextUrl="the-lady-with-an-ermine" source="https://en.wikipedia.org/wiki/The_Sleeping_Gypsy"/>
+        was discovered by the art critic Louis Vauxcelles."`} authorImg={GypsyAuthor} year="1897" galleryImg={galleryImg} prevUrl="van-gogh-self-portrait" nextUrl="the-lady-with-an-ermine" source="https://en.wikipedia.org/wiki/The_Sleeping_Gypsy" currentItem={8}/>
     );
 }
 

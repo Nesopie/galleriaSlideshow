@@ -10,7 +10,7 @@ const PenitentMagalene = () => {
         It hangs in Seville Cathedral. It has probably been in the cathedral since the
         late 17th century. The painting's first home was the collection of Fernando
         Enriquez Afan de Ribera, from 1626 to 1637. She returned to the subject later
-        in the 1620s in Mary Magdalene as Melancholy.`} authorImg={penMagAuthor} year="1625" galleryImg={galleryImg} prevUrl="guernica" nextUrl="the-storm-on-the-sea-of-galilee" source="https://en.wikipedia.org/wiki/Penitent_Magdalene_(Artemisia_Gentileschi)"/>
+        in the 1620s in Mary Magdalene as Melancholy.`} authorImg={penMagAuthor} year="1625" galleryImg={galleryImg} prevUrl="guernica" nextUrl="the-storm-on-the-sea-of-galilee" source="https://en.wikipedia.org/wiki/Penitent_Magdalene_(Artemisia_Gentileschi)" currentItem={4}/>
     )
 }
 

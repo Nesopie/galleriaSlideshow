@@ -5,7 +5,7 @@ const Header = (props) => {
                 <div className="title">
                     galleria.
                 </div>
-                <a href="/starry-night" className="startSlideshow">
+                <a href="#/starry-night" className="startSlideshow">
                     START SLIDESHOW
                 </a>
             </div>

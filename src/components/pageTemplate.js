@@ -90,7 +90,7 @@ const PageTemplate = (props) => {
                 <LeftContainer paintingUrl={props.paintingUrl} title={props.title} author={props.author} authorImg={props.authorImg}/>
                 <RightContainer desc={props.desc} year={props.year} source={props.source}/>
             </div>
-            <Footer paintingName={props.title} author={props.author} nextUrl={`#/${props.nextUrl}`} prevUrl={`#/${props.prevUrl}`}/>
+            <Footer paintingName={props.title} author={props.author} nextUrl={`#/${props.nextUrl}`} prevUrl={`#/${props.prevUrl}`} currentItem={props.currentItem}/>
         </div>
     );
 }

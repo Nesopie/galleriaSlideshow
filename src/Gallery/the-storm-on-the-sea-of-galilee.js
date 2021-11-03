@@ -10,7 +10,7 @@ const TheStormOnTheSeaOfGalilee = () => {
         struggling frantically against the heavy storm to regain control of their fishing
         boat. A huge wave beats the bow and rips the sail. One of the disciples is seen
         vomiting over the side. Another one, looking directly out at the viewer, is a
-        self-portrait of the artist. Only Christ, depicted on the right, remains calm.`} authorImg={seaStormAuthor} year="1633" galleryImg={galleryImg} prevUrl="penitent-magdalene" nextUrl="the-great-wave-off-kanagawa" source="https://en.wikipedia.org/wiki/The_Storm_on_the_Sea_of_Galilee"/>
+        self-portrait of the artist. Only Christ, depicted on the right, remains calm.`} authorImg={seaStormAuthor} year="1633" galleryImg={galleryImg} prevUrl="penitent-magdalene" nextUrl="the-great-wave-off-kanagawa" source="https://en.wikipedia.org/wiki/The_Storm_on_the_Sea_of_Galilee" currentItem={5}/>
     );
 }
 

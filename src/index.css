@@ -207,7 +207,16 @@ footer {
     padding: 1rem 2rem 1rem 2rem;
     width: 100%;
     justify-content: space-between;
-    border-top: 1px solid black;
+    border-top: 1px solid #7d7d7d;
+}
+
+.progressBar {
+    position: absolute;
+    top: 0;
+    height: 2px;
+    z-index: 9999;
+    background-color: black;
+    left: 0;
 }
 
 .authorDetails {
