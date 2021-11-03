@@ -1,5 +1,6 @@
 import Header from './header.js';
 import Footer from './footer.js';
+import { useEffect } from 'react';
 
 const LeftContainer = (props) => {
     const onEnter = (e) => {
@@ -24,6 +25,19 @@ const LeftContainer = (props) => {
         const image = document.querySelector(".galleryImg");
         image.classList.remove("noDisplay");
     }
+
+    useEffect(() => {
+        if(window.innerWidth >= 1110) {
+            setTimeout(() => {
+                let imgWidth = document.querySelector(".painting").width;
+                let paintingDetails = document.querySelector(".paintingDetails");
+
+                let marginLeft = imgWidth * 0.7 + "px";
+                paintingDetails.style.left = "0";
+                paintingDetails.style.marginLeft = marginLeft;
+            }, 50);
+        }
+    });
 
     return (
         <section className="leftContainer">

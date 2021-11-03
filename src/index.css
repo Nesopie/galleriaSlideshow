@@ -18,6 +18,11 @@ header > div {
     font-size: 2rem;
 }
 
+.title > a {
+    text-decoration: none;
+    color: black;
+}
+
 .startSlideshow {
     font-size: 0.7rem;
     color: #7d7d7d;
@@ -398,6 +403,10 @@ center > img {
 
     .painting {
         height: 35rem;
+    }
+
+    .paintingDetails {
+        /* left: 0; */
     }
 
     .authorPicContainer {

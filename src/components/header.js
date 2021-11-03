@@ -3,7 +3,7 @@ const Header = (props) => {
         <header>
             <div>
                 <div className="title">
-                    galleria.
+                    <a href="/">galleria.</a>
                 </div>
                 <a href="#/starry-night" className="startSlideshow">
                     START SLIDESHOW
